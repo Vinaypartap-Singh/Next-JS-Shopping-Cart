@@ -5,15 +5,7 @@ const cartSlice = createSlice({
   initialState: [],
   reducers: {
     add(state, action) {
-      const itemInCart = state.cart.find(
-        (items) => items.id === action.payload.id
-      );
-
-      if (itemInCart) {
-        itemInCart.quantity++;
-      } else {
-        state.cart.push({ ...action.payload, quantity: 1 });
-      }
+      state.push(action.payload);
     },
 
     increaseQuantity(state, action) {
