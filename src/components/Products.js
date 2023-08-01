@@ -26,7 +26,7 @@ export default function Products() {
 
   return (
     <>
-      <h1>Cart Items: {cartItem.length}</h1>
+      <h5 style={{ marginTop: "30px" }}>Cart Items: {cartItem.length}</h5>
       <div className="card-wrapper">
         {products?.map((data) => {
           return (
