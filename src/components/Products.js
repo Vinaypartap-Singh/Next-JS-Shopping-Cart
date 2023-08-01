@@ -27,6 +27,7 @@ export default function Products() {
               className="p-card-image"
             />
             <h4>{data.title}</h4>
+            <button>Add To Cart</button>
           </div>
         );
       })}

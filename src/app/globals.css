@@ -127,3 +127,9 @@ a {
   height: 300px;
   object-fit: cover;
 }
+
+.card > button {
+  margin-top: 17px;
+  padding: 9px;
+  width: 100%;
+}
